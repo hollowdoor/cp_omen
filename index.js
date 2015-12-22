@@ -1,5 +1,12 @@
+require("setimmediate");
 var fs = require('fs'),
     Promise = require('es6-promise').Promise;
+
+/*
+git remote add origin https://github.com/hollowdoor/cp_omen.git
+git push -u origin master
+npm publish
+*/
 
 module.exports = function(src, dest){
 
@@ -10,7 +17,7 @@ module.exports = function(src, dest){
 
             if(!exists)
                 reject(new Error('cp-omen error: '+src+' does not exist.'));
-            
+
             fs.lstat(src, function(err, stats){
                 if(err)
                     return reject(new Error('cp-omen error: '+err.message));

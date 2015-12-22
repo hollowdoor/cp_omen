@@ -1,13 +1,14 @@
 {
   "name": "cp-omen",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Copy one file",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "es6-promise": "^3.0.2"
+    "es6-promise": "^3.0.2",
+    "setimmediate": "^1.0.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -20,5 +21,9 @@
     "promise"
   ],
   "author": "Quentin Engles <hollowdoor99@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/hollowdoor/cp_omen.git"
+    },
 }
